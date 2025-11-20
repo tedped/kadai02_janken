@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけんと水槽育成ゲーム【きまぐれな水の世界へ、ようこそ】</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header-upper">
+        <div id="header-title">きまぐれな水の世界へ、ようこそ</div>
+        <div>
+          <button id="button-bgm">🔈</button>
+          <!-- 音源データを公開しないため、コメントアウト -->
+          <!-- <audio
+            id="bgm"
+            src=""
+            loop
+          ></audio> -->
+        </div>
+      </div>
+      <div id="header-bottom">
+        <div id="rsp-layout">
+          <div id="title">
+            <p>どれを出しますか？</p>
+          </div>
+          <div id="click-btn">
+            <button id="rock">グー✊</button>
+            <button id="scissors">チョキ✌️</button>
+            <button id="paper">パー✋</button>
+            <p class="a">Let's じゃんけん🤟</p>
+            <!-- 制限時間はJSで設定 -->
+            <div class="timekeeper">残り時間<span id="timer"></span>秒</div>
+          </div>
+        </div>
+        <div class="communication">
+          <p class="word">こんなところに人なんて</p>
+          <p class="word">めずらしい</p>
+          <p class="word">ゆっくり休んでいってね</p>
+          <div id="merman" class="inhabitant">🧜</div>
+        </div>
+        <div class="communication">
+          <div id="mermaid" class="inhabitant">🧜‍♀️</div>
+          <p class="word">ねー、疲れてる？</p>
+          <p class="word">疲れてなかったら、</p>
+          <p class="word">じゃんけんして遊ばない？</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 音源データを公開しないため、コメントアウト -->
+      <!-- <audio
+        id="babble-middle"
+        src=""
+      ></audio> -->
+      <!-- <audio
+        id="babble-low"
+        src=""
+      ></audio> -->
+
+      <section id="water-tank">
+        <div id="above-water"></div>
+        <div id="water"></div>
+        <div id="ground"></div>
+      </section>
+      <div id="center-rock"></div>
+    </main>
+
+    <footer>
+      <p id="footer-title">🧜ルール説明<span id="mermaid">🧜‍♀️</span></p>
+      <p>じゃんけんに勝って、「水草の素」を獲得しよう🔵</p>
+      <p>「水草の素」はクリックした場所に水草を発生させます🌿</p>
+      <p>5回毎に、「水草の素」から生き物が生まれます🐟</p>
+      <p>🐠水槽をにぎやかにしよう🐡</p>
+    </footer>
+
+    <!-- jQueryが先 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- test,jsが後 -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
